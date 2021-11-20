@@ -1,2 +1,4 @@
 es-CL:
   hello: "Hola mundo"
+  session:
+    log_in: "Iniciar sesión"
