@@ -9,5 +9,8 @@ Rails.application.routes.draw do
   mount Rswag::Ui::Engine => '/api-docs'
   devise_for :users
   mount Sidekiq::Web => '/queue'
+
+  resource :curriculums, only: [:new]
+  root to: 'curriculums#new'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
